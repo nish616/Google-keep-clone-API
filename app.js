@@ -42,5 +42,9 @@ try{
 }
 
 finally{
-    app.listen('5000', console.log("Listening at port 5000"));
+    let port = process.env.PORT;
+    if (port == null || port == "") {
+     port = 5000;
+    }
+    app.listen(port, console.log("Listening at port 5000"));
 }

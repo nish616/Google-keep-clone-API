@@ -46,5 +46,5 @@ finally{
     if (port == null || port == "") {
      port = 5000;
     }
-    app.listen(port, console.log("Listening at port 5000"));
+    app.listen(port, console.log(`Listening at port ${port} `));
 }
